@@ -3,8 +3,13 @@
     padding:0;
     box-sizing:border-box;
 }
+
+
 a{
     text-decoration: none;
+}
+ul{
+    list-style:none;
 }
 .navbar{
 
@@ -20,24 +25,20 @@ a{
 .nav-links{
     display:flex;
     align-items:center;
-    
-
-     
-
 }
-.nav-links{
+.nav-links li{
     margin:0 30px;
 
 }
 
 header{
-    width:100vh;
+    width:100vw;
     height:100vh;
-    background-image:url('https://www.visittshwane.co.za/wp-content/uploads/2017/05/gallery_union_buildings_16-705x468.jpg');
+    background-image:url('https://th.bing.com/th/id/R.9d277118617c80f68803f6d677c5b85c?rik=VAlrLqDXKXTR2w&pid=ImgRaw&r=0');
     background-position : bottom;
     background-size : cover; 
 
-    display:flex; 
+    display: flex; 
     align-items:flex-end;
     justify-content:center;
 
@@ -62,7 +63,7 @@ header{
 .header-content h1{
     font-size:7vmin;
     margin-top:50px;
-    margin-bottom:50px;
+    margin-bottom:30px;
 }
 .active{
     color:#fc036b;
@@ -82,8 +83,22 @@ header{
     right:30px;
     width:40px; 
     cursor:pointer;
+    display:none;
+}
+section{
+    width:80px;
+    margin:80px;
+
+}
+.title{
+    text-align:center;
+    font-size:4vmin;
+    color:rgba(73,73,126);
 }
 @media only screen and (max-width:850px){
+    .menu-button{
+        display:block;
+    }
     .navbar{
         padding:0;
     }
@@ -100,12 +115,13 @@ header{
         background:#383872;
         margin-top:-900px;
         transition:all 0.5s east;
+
     }
-    ,mobile-menu{
+    .mobile-menu{
         margin-top:0px;
         border-bottom-right-radius:30%;
     }
     .nav-links li{
-        margin:30px auto;
+        margin: 30px auto;
     }
 }
